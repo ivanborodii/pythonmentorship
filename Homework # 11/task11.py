@@ -5,8 +5,8 @@ from pymongo import MongoClient
 import csv, argparse
 from datetime import date,datetime
 
-def convert_from_csv_projects(csv_file):
-    projects_csv = csv_file + '\Projects.csv'
+def convert_from_csv_projects(csv_folder):
+    projects_csv = csv_folder + '\Projects.csv'
     csv_dict_projects = csv.DictReader(open(projects_csv))
     list_dict_projects = [] # list of dictionaries which will be used for inserting into mongodb collection
     for i in csv_dict_projects:
@@ -19,8 +19,8 @@ def convert_from_csv_projects(csv_file):
                                           int(temp_list[1]),0,0)
     return list_dict_projects
 
-def convert_from_csv_tasks(csv_file):
-    tasks_csv = csv_file + '\Tasks.csv'
+def convert_from_csv_tasks(csv_folder):
+    tasks_csv = csv_folder + '\Tasks.csv'
     csv_dict_tasks = csv.DictReader(open(tasks_csv))
     list_dict_tasks = [] # list of dictionaries which will be used for inserting into mongodb collection
 
