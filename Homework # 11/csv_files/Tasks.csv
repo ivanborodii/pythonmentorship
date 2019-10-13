@@ -1,0 +1,9 @@
+Id,Priority,Details,Status,Deadline,Completed,Project
+1,1,Bot 1,new,11/1/2019,,CTCO-ROBO
+2,2,Bot 2,pending,12/1/2019,,CTCO-ROBO
+3,3,Bot 3,done,10/9/2019,10/6/2019,CTCO-ROBO
+4,1,Implementing foreign keys,new,11/1/2019,,CTCO-ORKE
+5,2,ETL,pending,12/1/2019,,CTCO-ORKE
+6,3,Pre-ETL,done,10/19/2019,10/8/2019,CTCO-ORKE
+7,1,ETL,cancelled,11/19/2019,,CTCO-ORKE
+8,2,Pre-ETL,cancelled,12/19/2019,,CTCO-ORKE
